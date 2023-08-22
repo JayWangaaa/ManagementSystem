@@ -28,6 +28,7 @@ public class AttractionController {
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id){
         log.info("删除景区哈，参数：{}",id);
+        System.out.println("斤斤计较");
         attractionService.delete(id);
         return Result.success();
     }
