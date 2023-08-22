@@ -30,6 +30,7 @@ public class AttractionController {
         log.info("删除景区哈，参数：{}",id);
         System.out.println("斤斤计较");
         System.out.println("adsadadadsd");
+        System.out.println("push test");
         attractionService.delete(id);
         return Result.success();
     }
