@@ -20,7 +20,7 @@ public class AttractionController {
     public Result page(@RequestParam(defaultValue = "1") Integer page,
                        @RequestParam(defaultValue = "10") Integer pageSize,
                        String name, String location, String score){
-        log.info("分页查询，参数：{}，{},{}",page,pageSize,name,location,score);
+        log.info("分页查询，参数哈哈哈哈：{}，{},{}",page,pageSize,name,location,score);
         PageBean pageBean = attractionService.page(page,pageSize,name,location,score);
         return Result.success(pageBean);
     }
